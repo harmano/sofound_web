@@ -1,0 +1,890 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+html, body {
+  overflow-x: hidden!important
+}
+
+    * {box-sizing: border-box;}
+
+    .mySlides {display: none;}
+
+
+
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.9s;
+    animation-name: fade;
+    animation-duration: 2.9s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+* {
+@include box-sizing(border-box);
+}
+
+
+
+.module {
+
+position: relative;
+float: left;
+
+&:nth-child(even) {
+margin-right: 0;
+}
+box-shadow: 0 1px 3px rgba(black, 0.2);
+}
+
+
+.come-in {
+
+transform: translateX(-150px);
+animation: come-in 1.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+animation-duration: 1.6s;
+}
+.already-visible {
+transform: translateX(0);
+animation: none;
+}
+
+@keyframes come-in {
+to { transform: translateX(0); }
+}
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+/* ....------------------------------------------------ Nav ----------------------------------------------------------------------- ...*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  -webkit-box-shadow: -2px 10px 25px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 10px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px 10px 25px 0px rgba(0,0,0,0.75);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 0px;}
+}
+
+.cursor{
+  font-size:50px;
+}
+
+.nav-line{
+  border-width: 2px;
+  border-color: white;
+  width: 50px;
+  margin-top: -12px;
+}
+
+.nav-hamburger{
+  float: left;
+  margin: 15%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+/* ....------------------------------------------------ Boxes ----------------------------------------------------------------------- ...*/
+.services-box{
+
+}
+
+
+
+
+/* ....------------------------------------------------ Text ----------------------------------------------------------------------- ...*/
+.price-p-text{
+  font-size: 12px;
+  margin-top: -20px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.h1-text {
+  font-size: 13vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.h2-text{
+  font-size: 6vw;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.text-p{
+  color: white;
+  font-size: 8px;
+}
+
+.h1-description{
+  font-size: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-text{
+  color: white;
+  display: none;
+  text-decoration: underline;
+  vertical-align: center;
+}
+
+.header-text{
+  font-size: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left-title-text{
+  font-size: 15px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  position: inline;
+  padding-top: 5px;
+}
+
+.left-title-text-2{
+  font-size: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  position: inline;
+  padding-top: 5px;
+}
+
+.footer-title{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+
+}
+
+.footer-text{
+  padding-bottom: 100px;
+    opacity: .8;
+    color: white;
+
+}
+.footer-p p{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  opacity: .8;
+  margin-bottom: 2px;
+  transition-duration: 0.4s;
+  text-decoration: none!important;
+  text-decoration-color: black ;
+}
+
+.footer-p p:hover{
+  color:grey;
+  text-decoration: none!important;
+}
+
+.aboutus-text{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+}
+
+.nav-text{
+  font-size: 50px !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.icon-font{
+  float:right;
+  vertical-align: center;
+  padding-top: 4px;
+}
+.contact-text{
+  color: black;
+  transition-duration: 0.4s;
+  font-family: 'Roboto', sans-serif;
+
+  float: left;
+}
+.contact-text:hover{
+  color: grey;
+  text-decoration: none;
+}
+/* ....------------------------------------------------ Form ----------------------------------------------------------------------- ...*/
+.form-style{
+  width: 50%;
+}
+.form-styel{
+  border-top: red;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  border-color: black;
+  font-size: 10px;
+}
+.form-styel-box{
+
+  border-radius: 0px;
+  border-color: black;
+  font-size: 10px;
+}
+
+/* ....------------------------------------------------ Containers ----------------------------------------------------------------------- ...*/
+
+.line-contact{
+  border: 1px solid black;
+  opacity: .2;
+  margin-top: 10%;
+  width: 70%;
+  border-radius: 0px;
+}
+/* ....------------------------------------------------ Containers ----------------------------------------------------------------------- ...*/
+.contact-container{
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin: auto;
+
+
+}
+
+.form-contact-container{
+  padding: 0px;
+  padding-top: 0px;
+  margin-left: 19%;
+
+
+}
+
+
+.footer-container{
+  padding-left: 15%;
+  padding-top: 30px;
+}
+
+.text-margin{
+  margin-top: 3%;
+}
+/* ....------------------------------------------------ Images ----------------------------------------------------------------------- ...*/
+
+.logo{
+  width: 60%;
+  float: right;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.logo-footer{
+  width: 50%;
+
+  font-size: 18px;
+  padding: 20px;
+}
+
+.logo-about{
+  width: 100%;
+
+  font-size: 18px;
+  padding: 20px;
+}
+.portfolio-img{
+  width: 90%;
+  padding-right: 0px;
+  float: right;
+  padding-top: 10px;
+  transition-duration: .2;
+}
+.portfolio-img:hover{
+  opacity: .3;
+}
+
+.portfolio-img-2:hover{
+  opacity: .3;
+}
+.portfolio-img-2{
+  width: 90%;
+  padding-top: 10px;
+}
+
+/* ....------------------------------------------------ fonts ----------------------------------------------------------------------- ...*/
+
+.font-social {
+  color: white;
+  padding: 0px;
+  border-radius: 0px;
+  transition-duration: 0.4s;
+
+}
+.font-social:hover{
+  color: grey;
+
+}
+.font-awesome{
+  padding-bottom: 20px;
+}
+
+
+/* ....------------------------------------------------ Lines ----------------------------------------------------------------------- ...*/
+
+.short-line{
+  margin-bottom: 5%;
+  width: 40%;
+  color: white;
+  border-top: 1px solid white;
+}
+
+/* ....------------------------------------------------ BG ----------------------------------------------------------------------- ...*/
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*clearfixes*/
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.main-container {
+  background: #fff;
+  max-width: 1000px;
+  margin: 25px 25px auto;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  padding: 25px;
+}
+
+.container:last-of-type {
+  padding-top: 0px;
+}
+/*animation element*/
+
+.animation-element {
+  position: relative;
+  width: 30%;
+  margin: 0% 1.33 2.66% 1.33%;
+  float: left;
+}
+/*3 grid layout*/
+
+.animation-element:nth-of-type(3n-2) {
+  width: 31.5%;
+  margin: 0% 1.375% 2.75% 0%;
+  clear: left;
+}
+
+.animation-element:nth-of-type(3n-1) {
+  width: 31.5%;
+  margin: 0% 1.375% 2.75% 1.375%;
+}
+
+.animation-element:nth-of-type(3n-0) {
+  width: 31.5%;
+  margin: 0% 0% 2.75% 1.375%;
+  clear: right;
+}
+/*bounce up animation for the subject*/
+
+.bounce-up .subject {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view .subject {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.subject {
+  float: left;
+  width: 100%;
+  margin: 0% 1.33% 2.66% 1.33%;
+  background: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
+
+.subject:hover,
+.subject:active {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.subject .header {
+  margin: 8px 0px;
+}
+
+.subject .header .date,
+.subject .header .category {
+  margin: 0px;
+  clear: none;
+  width: 50%;
+}
+
+.subject .header .date i,
+.subject .header .category i {
+  margin-right: 5px;
+  color: #333;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.subject .header .date {
+  float: left;
+  text-align: left;
+}
+
+.subject .header .category {
+  float: right;
+  text-align: right;
+}
+/*subject icon at top*/
+
+.subject .icon {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  left: calc(50% - 20px);
+}
+
+.subject .icon i {
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  border-radius: 50%;
+  text-align: center;
+  padding: 7px;
+}
+/*Category color / icon color*/
+
+.subject .category-color {
+  height: 7px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.subject.design .category-color,
+.subject.design .icon i {
+  background: #c0392b;
+}
+
+.subject.development .category-color,
+.subject.development .icon i {
+  background: #16a085;
+}
+
+.subject.photography .category-color,
+.subject.photography .icon i {
+  background: #2980b9;
+}
+/*hovering over subject*/
+
+.subject.development:hover .header i {
+  color: #16a085;
+}
+
+.subject.design:hover .header i {
+  color: #c0392b;
+}
+
+.subject.photography:hover .header i {
+  color: #2980b9;
+}
+
+.subject .title {
+  margin: 12px 0px;
+  border-bottom: dashed 1px #ccc;
+  padding-bottom: 10px;
+}
+
+.subject .content {
+  margin-bottom: 8px;
+}
+
+.subject .enrole {
+  position: relative;
+  color: #333;
+  padding: 5px 12px;
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  border: solid 1px #ccc;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.subject .enrole:hover,
+.subject .enrole:active {
+  background: #222;
+  color: #fff;
+}
+/*media queries for small devices*/
+
+@media screen and (max-width: 678px) {
+  .main-container {
+    margin: 20px 15px;
+  }
+  .animation-element,
+  .animation-element:nth-of-type(3n-1),
+  .animation-element:nth-of-type(3n-2),
+  .animation-element:nth-of-type(3n-0) {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
+  .subject .header .date,
+  .subject .header .category {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+/* ....------------------------------------------------ BG ----------------------------------------------------------------------- ...*/
+
+.first-box{
+  background-color: black;
+}
+.second-box{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.third-box{
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.fourth-box{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+
+}
+
+.fifth-box{
+  padding-top: 20px;
+}
+.first-con-box{
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin-left: 10%;
+  padding-right: 20%;
+  height: 110vw;
+}
+/* ....------------------------------------------------ Margin ----------------------------------------------------------------------- ...*/
+.margin-top{
+  margin-top: 20px;
+}
+
+.footer-margin-mobile-top{
+  margin-top: 60px;
+}
+/* ....------------------------------------------------ Button ----------------------------------------------------------------------- ...*/
+
+.button-1{
+  background-color: black;
+  border-color: #f2f2f2;
+  border-width: 3px;
+  border-radius: 0px;
+  color: #f2f2f2;
+  padding: 5px 24px 5px 24px;
+  border-color: #f2f2f2;
+  transition-duration: 0.4s;
+}
+.contact-button{
+  margin-top: 20px;
+  border-width: 1px !important;
+}
+.button-href{
+
+  color: #f2f2f2;
+
+  text-decoration: none;
+}
+.button-href:hover{
+
+  color: black;
+
+  text-decoration: none;
+}
+.button-href-2{
+  color: black;
+
+
+  text-decoration: none;
+}
+.button-href-2:hover{
+
+  color: #f2f2f2 !important;
+  text-decoration: none;
+}
+
+.button-1:hover{
+  background-color: #f2f2f2;
+  color:black;
+
+}
+
+.button-2{
+  background-color: white;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 0px;
+  color: black;
+  padding: 5px 24px 5px 24px;
+  margin-top:0px;
+  margin-bottom: 50px;
+  font-size: 10px;
+  border-color: black;
+  transition-duration: 0.4s;
+}
+
+.button-2:hover{
+  background-color: black;
+  color: #f2f2f2 !important;
+
+}
+
+/* ....------------------------------------------------ Screens ----------------------------------------------------------------------- ...*/
+
+@media screen and (min-width: 769px) {
+
+  .logo{
+    width: 30%;
+    float: right;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .logo-text{
+    color: white;
+    display: block;
+    opacity: .1;
+    text-decoration: none;
+    padding-top: 16%;
+    padding-left: 16%;
+
+    position: inline;
+    z-index: 1;
+  }
+  .h1-text {
+    font-size: 10vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  .header-text{
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  .first-con-box{
+    height: 600px;
+    margin-left: 15%;
+  }
+  .margin-top{
+    margin-top: 40px;
+  }
+
+  .h2-text{
+    font-size: 4vw;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .button-2{
+    margin-bottom: 100px;
+  }
+  .fifth-box{
+    padding-top: 100px;
+  }
+  .fourth-box{
+    padding-bottom: 100px;
+
+  }
+  .footer-margin-mobile-top{
+    margin-top: 0px;
+  }
+  .text-p{
+    font-size: 15px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 70px;
+
+  }
+  .aboutus-text{
+
+    font-size: 4vw;
+  }
+
+
+  .nav-text{
+    font-size: 100px !important;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 200px !important;
+  }
+
+  .portfolio-img-2{
+    width: 60%;
+  }
+  .portfolio-img{
+    width: 60%;
+  }
+  .contact-container{
+    padding-top:60px;
+    padding-bottom: 60px;
+    margin-left: 15%;
+  }
+  .form-contact-container{
+    padding-left: 100px;
+    padding-top: 0px;
+    margin-top: -200px;
+      margin-left: 29%;
+  }
+  .socials-contact-container{
+    padding-top: 3%;
+  }
+  .contact-button{
+    margin-top: 20px;
+    border-width: 1px;
+  }
+  .line-contact{
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    /* STYLES HERE */
+}
