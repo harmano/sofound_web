@@ -696,11 +696,9 @@ to { transform: translateX(0); }
 }
 .first-con-box{
   padding: 20px;
-  padding-bottom: 30px;
   width: 100%;
   margin-left: 10%;
   padding-right: 20%;
-  height: 110vw;
 }
 /* ....------------------------------------------------ Margin ----------------------------------------------------------------------- ...*/
 .margin-top{
